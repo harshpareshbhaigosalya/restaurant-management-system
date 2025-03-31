@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Analysis Results</h1>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h3>Original Image</h3>
+                <img src="{{ url_for('static', filename='uploads/' + original_image) }}" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>Heatmap</h3>
+                <img src="{{ url_for('static', filename='uploads/' + heatmap_image) }}" class="img-fluid">
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header bg-warning">
+                <h3 class="mb-0">Waste Analysis</h3>
+            </div>
+            <div class="card-body">
+                <h4 class="text-danger">Food Left: {{ food_left }}%</h4>
+                <p class="lead">
+                    {% if food_left|float > 30 %}
+                        Significant food waste detected!
+                    {% else %}
+                        Minimal food waste detected
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
