@@ -1,0 +1,102 @@
+/* Ensure the body has padding and spacing */
+body {
+    background: url("your-background-image.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the menu */
+  .menu-container {
+    text-align: center;
+    color: white;
+    padding: 40px;
+  }
+  
+  /* Menu title */
+  .menu-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+  }
+  
+  /* Menu list box */
+  .menu-list {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style the list */
+  .menu-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Each menu item */
+  .menu-list li {
+    display: flex;
+    justify-content: space-between; /* Ensures space between elements */
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hover effect */
+.menu-list li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+/* Dish name */
+.dish-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    flex: 1;  /* Takes available space */
+    text-align: left;
+}
+
+/* Dish price */
+.dish-price {
+    font-size: 1.4rem;
+    color: gold;
+    font-weight: bold;
+    text-align: right;
+    flex: 0 0 100px; /* Keeps price at a fixed width */
+    margin-right: 10px;
+}
+
+  
+  /* Buttons section */
+  .menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Standardized button styling */
+  button {
+    font-size: 16px !important;
+    padding: 8px 15px !important;
+    border-radius: 5px !important;
+    text-transform: uppercase;
+  }
+  
+  button .icon {
+    margin-right: 5px;
+  }
+  
+  /* Make Edit and Delete buttons consistent */
+  .menu-list button {
+    font-size: 14px !important;
+    padding: 5px 10px !important;
+    border-radius: 3px !important;
+  }
+  

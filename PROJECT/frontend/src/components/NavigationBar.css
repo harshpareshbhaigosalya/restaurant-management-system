@@ -1,0 +1,79 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+  background-color: rgba(56, 50, 50, 0.9); /* Dark color with slight transparency */
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-logo {
+  height: 40px; /* Adjust the height as needed */
+  width: auto;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.hero-logo {
+  display: block;
+  margin: 20px auto; /* Center the logo */
+  width: 350px; /* Adjust size */
+  height: 350px;
+  max-width: 100%; /* Responsive */
+}
+
+/* Navbar Brand (Logo) */
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00 !important;
+}
+
+/* Navbar Links */
+.nav-item {
+  font-size: 1rem;
+  margin-right: 15px;
+  color: rgba(54, 46, 46, 0.8) !important; /* Slightly faded white */
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #ffcc00 !important;
+  transform: translateY(-2px);
+}
+
+/* User Dropdown */
+.user-dropdown {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(87, 78, 78, 0.9) !important; 
+}
+
+.nav-icon {
+  margin-right: 5px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Logout Button */
+.logout-btn {
+  color: red !important;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 10px;
+    background-color: rgba(31, 31, 31, 0.95); /* Slightly darker on mobile */
+  }
+}

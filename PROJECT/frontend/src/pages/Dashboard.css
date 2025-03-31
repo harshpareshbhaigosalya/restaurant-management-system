@@ -1,0 +1,47 @@
+/* Sidebar Styling */
+.dashboard_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 40px;
+}
+
+.fixed-sidebar {
+    width: 150px; /* Set a slightly wider sidebar */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding-top: 60px; /* Adjusted padding */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Ensures sidebar stays above content */
+    padding-top: 120px;
+}
+
+/* Sidebar List Items */
+.fixed-sidebar .list-group-item {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.fixed-sidebar .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content */
+.dashboard-content {
+    width: 80%;
+    /* margin-left: 150px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* padding-left: 50px; */
+}
+
